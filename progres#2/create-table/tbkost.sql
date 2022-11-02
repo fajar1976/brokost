@@ -7,5 +7,11 @@ create table tb_kost(
     lantai smallint(2) not null,
     jenis_kost enum('laki-laki','perempuan','campur') not null default 'laki-laki',
     kamar_tersedia smallint(2),
-    harga float not null
+    harga float not null,
+    id_pemilik char(10) not null,
+    id_jenis tinyint not null
 )
+
+alter table tb_kost
+    add key id_pemilik(id_pemilik),
+    add key id_jenis(id_jenis);
