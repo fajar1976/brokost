@@ -17,8 +17,8 @@
               </div>
               <!-- /.card-header -->
               <div class="card-body">
-              <button type="button" class="btn btn-info" data-toggle="modal" data-target="#modal-sm">
-                  Tambah Data
+              <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal-lg">
+                  Masukan Data
                 </button>
                 <br></br>
 
@@ -79,18 +79,28 @@
       <!-- /.container-fluid -->
     </section>
     
-    <!-- Modal -->
-    <div class="modal fade" id="modal-sm">
-        <div class="modal-dialog modal-sm">
+    <!-- /.modal -->
+
+    <div class="modal fade" id="modal-lg">
+        <div class="modal-dialog modal-lg">
           <div class="modal-content">
             <div class="modal-header">
-              <h4 class="modal-title">Small Modal</h4>
+              <h4 class="modal-title">Large Modal</h4>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
             <div class="modal-body">
-              <p>One fine body&hellip;</p>
+              
+            <div class="row">
+              <div class="col">
+                <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+              </div>
+              <div class="col">
+                <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+              </div>
+            </div>
+
             </div>
             <div class="modal-footer justify-content-between">
               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -101,5 +111,6 @@
         </div>
         <!-- /.modal-dialog -->
       </div>
+      <!-- /.modal -->
 
   
