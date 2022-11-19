@@ -36,19 +36,19 @@
 
                   <tbody>
                     <?php 
-                    $query = mysqli_query($koneksi, "SELECT * from tb_pengguna");
-                    while($pengguna = mysqli_fetch_array($query)){
+                    $query = mysqli_query($koneksi, "SELECT * from tb_pencari_kost");
+                    while($pencari = mysqli_fetch_array($query)){
 
                     ?>
 
                   <tr>
-                  <td><?php echo $pengguna['id_pengguna'];?></td>
-                    <td><?php echo $pengguna['nama'];?></td>
-                    <td width='20%'><?php echo $pengguna['alamat'];?></td>
-                    <td><?php echo $pengguna['jenis_kelamin'];?></td>
-                    <td><?php echo $pengguna['pekerjaan'];?></td>
-                    <td><?php echo $pengguna['no_hp'];?></td>
-                    <td><?php echo $pengguna['email'];?></td>
+                  <td><?php echo $pencari['id_pencari'];?></td>
+                    <td><?php echo $pencari['nama'];?></td>
+                    <td width='20%'><?php echo $pencari['alamat'];?></td>
+                    <td><?php echo $pencari['jenis_kelamin'];?></td>
+                    <td><?php echo $pencari['pekerjaan'];?></td>
+                    <td><?php echo $pencari['no_hp'];?></td>
+                    <td><?php echo $pencari['email'];?></td>
                   </tr>
                   <?php }?>
 
