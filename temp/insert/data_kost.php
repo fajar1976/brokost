@@ -1,6 +1,6 @@
 <?php
 include('../../conn.config.php')
-    $nama = $_GET['nama'];
+    $nama = $_GET['nama_kost'];
     $alamat = $_GET['alamat'];
     $fasilitas = $_GET['fasilitas'];
     $ukuran = $_GET['ukuran'];
@@ -9,8 +9,8 @@ include('../../conn.config.php')
     $alamat = $_GET['alamat'];
 
     $query = mysqli_query($koneksi, "INSERT INTO tb_kost(id_kost, 
-                                                        kode_kost, 
-                                                        nama, alamat, 
+                                                        nama_kost, 
+                                                        alamat, 
                                                         fasilitas, 
                                                         ukuran, 
                                                         lantai, 
