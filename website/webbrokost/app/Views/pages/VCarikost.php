@@ -1,0 +1,1 @@
+<h1>halaman pencarian kos</h1>
